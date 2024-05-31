@@ -1,0 +1,51 @@
+@font-face{
+    font-family: Comfortaa;
+    src: url(assets/Comfortaa-Regular.woff);
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    font-family: Comfortaa;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 60dvw;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+.text-lblue{
+    color: #5BCEFA
+}
+
+.text-pink{
+    color: #F5A9B8
+}
+
+.trans-gradient{
+    background: linear-gradient(to right, #5BCEFA, #F5A9B8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
