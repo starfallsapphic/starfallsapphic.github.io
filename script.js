@@ -1,5 +1,9 @@
 const eebtn = document.getElementById("ee-btn");
 const eebg = document.getElementById("ee-bg");
+const motionBtn = document.getElementById("motion-btn")
+console.log(motionBtn)
+let motionEnabled = true;
+let hasMouseLeft = true;
 
 eebtn.addEventListener("click", (e) => {
     eebg.classList.add("ee-ani");
@@ -9,6 +13,41 @@ eebtn.addEventListener("click", (e) => {
     sfx.play();
     setTimeout(() => eebtn.remove(), 1000);
     setTimeout(() => eebg.style.zIndex = null, 4000);
+});
+
+motionBtn.addEventListener("click", (e) => {
+    if(motionEnabled){
+        motionEnabled = false;
+        clearInterval(starsInterval);
+    }else{
+        motionEnabled = true;
+        starsInterval = setInterval(manageStars, 50000/innerWidth+150);
+    }
+
+    if(!hasMouseLeft){
+        if(motionEnabled){
+            motionBtn.classList.remove("btn-enabled");
+            motionBtn.classList.add("btn-disabled");
+        }else{
+            motionBtn.classList.remove("btn-disabled");
+            motionBtn.classList.add("btn-enabled");
+        }
+    }
+
+    hasMouseLeft = false;
+});
+
+motionBtn.addEventListener("mouseleave", (e) => {
+    if(!hasMouseLeft){
+        if(motionEnabled){
+            motionBtn.classList.remove("btn-disabled");
+            motionBtn.classList.add("btn-enabled");
+        }else{
+            motionBtn.classList.remove("btn-enabled");
+            motionBtn.classList.add("btn-disabled");
+        }
+        hasMouseLeft = true;
+    }
 });
 
 let starsbg = document.getElementById("stars-bg")
@@ -50,8 +89,8 @@ let manageStars = function () {
     if(prevInnerWidth !== innerWidth){
         prevInnerWidth = innerWidth;
         clearInterval(starsInterval);
-        starsInterval = setInterval(manageStars, 50000/innerWidth+35);
+        starsInterval = setInterval(manageStars, 50000/innerWidth+150);
     }
 }
 
-let starsInterval = setInterval(manageStars, 50000/innerWidth+35);
+let starsInterval = setInterval(manageStars, 50000/innerWidth+150);

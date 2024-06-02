@@ -1,5 +1,5 @@
 #ee-btn {
-    position: fixed;
+    position: absolute;
     background-color: transparent;
     border: none;
     width: 50px;
@@ -42,6 +42,7 @@
 #ee-bg {
     opacity: 0;
     position: fixed;
+    top: 10dvh;
     max-height: 80dvh;
     z-index: -5;
 }
