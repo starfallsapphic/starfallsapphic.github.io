@@ -20,16 +20,16 @@ function stars() {
     let xPos = Math.random()*99;
     e.style.left = xPos + "%";
 
-    if(xPos < 20 || xPos > 80){
+    if(xPos < 10 || xPos > 90){
         e.setAttribute("class", "star star-lblue");
-    }else if(xPos < 40 || xPos > 60){
+    }else if(xPos < 35 || xPos > 65){
         e.setAttribute("class", "star star-pink");
     }else{
         e.setAttribute("class", "star");
     }
 
     let duration = Math.random() * 3;
-    let size = Math.random() * 6 + 6;
+    let size = Math.random() * 12 + 6;
 
     e.style.fontSize = size + "px";
     e.style.animationDuration = 6 + duration + "s";
@@ -37,7 +37,21 @@ function stars() {
         starsbg.removeChild(e);
     }, (duration+6)*1000);
 }
-  
-setInterval(function () {
+
+// setInterval(function () {
+//     stars();
+// }, 50);
+
+let prevInnerWidth = innerWidth;
+
+let count = 0;
+let manageStars = function () {
     stars();
-}, 50);
+    if(prevInnerWidth !== innerWidth){
+        prevInnerWidth = innerWidth;
+        clearInterval(starsInterval);
+        starsInterval = setInterval(manageStars, 50000/innerWidth+35);
+    }
+}
+
+let starsInterval = setInterval(manageStars, 50000/innerWidth+35);
