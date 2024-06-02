@@ -1,0 +1,87 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(../assets/Comfortaa-Regular.woff);
+}
+
+body {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    font-family: Comfortaa;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border: 4px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 60dvw;
+    z-index: 1;
+    background-color: black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+h5{margin-top:0;}
+
+p, li {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+a{color:white;}
+a:hover{color:#AAA;}
+
+.hidden-link{text-decoration: none;}
+.hidden-link:hover{color: white;}
+
+ul{padding: 0px;}
+
+li{
+    text-align: center;
+    list-style-type: none;
+}
+
+.text-block {padding: 1em 0em;}
+
+@media screen and (width < 24rem) {
+    .container {
+        max-width: 70dvw;
+        padding: 30px 20px;
+    }
+    h1{font-size: 24px;}
+    h2{font-size: 20px;}
+    p,li{font-size: 16px;}
+}
+
+@media screen and (width < 18rem) {
+    .container {
+        max-width: 80dvw;
+        padding: 20px 10px;
+    }
+    h1{font-size: 20px;}
+    h2{font-size: 17px;}
+    p,li {font-size: 14px;}
+}
+
+.text-lblue {color: #5bcefa;}
+.text-pink {color: #f5a9b8;}
+
+.trans-gradient {
+    background: linear-gradient(to right, #5bcefa, #f5a9b8);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
