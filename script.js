@@ -1,7 +1,6 @@
 const eebtn = document.getElementById("ee-btn");
 const eebg = document.getElementById("ee-bg");
-const motionBtn = document.getElementById("motion-btn")
-console.log(motionBtn)
+const motionBtn = document.getElementById("motion-btn");
 let motionEnabled = true;
 let hasMouseLeft = true;
 
