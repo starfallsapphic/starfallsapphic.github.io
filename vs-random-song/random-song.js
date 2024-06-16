@@ -1,10 +1,17 @@
 const spinBtn = document.getElementById("spin-btn");
 const diffInputs = document.querySelectorAll("#difficulty-levels input");
+
 const minCCInput = document.getElementById("min-cc");
 const maxCCInput = document.getElementById("max-cc");
+
+const repeatChart = document.getElementById("repeat-chart");
+const repeatSong = document.getElementById("repeat-song");
+
 const instaSpin = document.getElementById("insta-spin-toggle");
 const songDisplay = document.getElementById("song-display");
 const difficulties = ["OPN", "MID", "FIN", "ENC"];
+let chartsOnCooldown = [];
+let songsOnCooldown = [];
 
 spinBtn.addEventListener("click", chooseSong);
 
@@ -14,11 +21,14 @@ function chooseSong(){
     minCC = minCCInput.value;
     maxCC = maxCCInput.value;
 
+    purgeCooldowns();
+
     for(let song of songs){
         addEligibleCharts(song);
     }
 
     filterByDiff();
+    filterByCooldown();
 
     if(eligibleCharts.length === 0){
         document.getElementById("spin-error").innerHTML = "no charts matched these settings!";
@@ -29,7 +39,8 @@ function chooseSong(){
 
     shuffle(eligibleCharts);
     if(instaSpin.checked){
-        setSongDisplay(eligibleCharts[0])
+        setSongDisplay(eligibleCharts[0]);
+        setOnCooldown(eligibleCharts[0]);
     }else{
         spinBtn.removeEventListener("click", chooseSong);
         let count = 0;
@@ -40,6 +51,8 @@ function chooseSong(){
 
         setTimeout(finaliseSongChoice, 2000);
     }
+
+    advanceCooldowns();
 }
 
 
@@ -97,6 +110,7 @@ function finaliseSongChoice(){
     shuffle(eligibleCharts);
     clearInterval(shuffleInterval);
     setSongDisplay(eligibleCharts[0]);
+    setOnCooldown(eligibleCharts[0]);
     songDisplay.classList.add("flash");
     songDisplay.addEventListener("animationend", () => songDisplay.classList.remove("flash"));
     spinBtn.addEventListener("click", chooseSong);
@@ -104,4 +118,35 @@ function finaliseSongChoice(){
 
 function filterByDiff(){
     eligibleCharts = eligibleCharts.filter(s => s.cc >= minCC && s.cc <= maxCC);
+}
+
+function setOnCooldown(c){
+    chartsOnCooldown.push({
+        chart: c,
+        sinceLast: 0,
+    });
+    songsOnCooldown.push({
+        title: c.title,
+        sinceLast: 0,
+    });
+}
+
+function filterByCooldown(){
+    for(let song of songsOnCooldown){
+        eligibleCharts = eligibleCharts.filter(c => c.title !== song.title);
+    }
+
+    for(let chart of chartsOnCooldown){
+        eligibleCharts = eligibleCharts.filter(c => !(c.title === chart.chart.title && c.diff === chart.chart.diff));
+    }
+}
+
+function purgeCooldowns(){
+    songsOnCooldown = songsOnCooldown.filter(s => s.sinceLast <= repeatSong.value);
+    chartsOnCooldown = chartsOnCooldown.filter(c => c.sinceLast <= repeatChart.value);
+}
+
+function advanceCooldowns(){
+    songsOnCooldown.forEach(s => s.sinceLast += 1);
+    chartsOnCooldown.forEach(c => c.sinceLast += 1);
 }
