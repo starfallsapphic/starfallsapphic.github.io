@@ -16,6 +16,38 @@ body {
 .container {
     display: flex;
     flex-direction: column;
+    gap: 2em;
+    margin: 60px 0px;
+    align-items: center;
+}
+
+button{
+    font-family: Comfortaa;
+    font-size: 16pt;
+    background-color: black;
+    opacity: 80%;
+    color: white;
+    border: 3px solid white;
+    transition: ease 0.25s;
+    
+}
+
+button:hover{
+    cursor: pointer;
+    border-color: red;
+    transition: ease 0.25s;
+}
+
+button#change-page-btn{
+    padding: 1em;
+    border-radius: 10px;
+    width: 75%;
+    z-index: 21;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
@@ -24,7 +56,6 @@ body {
     border-color: white;
     border-radius: 20px;
     padding: 40px;
-    margin: 60px 0;
     max-width: 60dvw;
     z-index: 1;
     background-color: black;
@@ -58,7 +89,7 @@ li{
 .text-block {padding: 1em 0em;}
 
 @media screen and (width < 24rem) {
-    .container {
+    .text-box {
         max-width: 70dvw;
         padding: 30px 20px;
     }
@@ -68,7 +99,7 @@ li{
 }
 
 @media screen and (width < 18rem) {
-    .container {
+    .text-box {
         max-width: 80dvw;
         padding: 20px 10px;
     }
@@ -95,12 +126,9 @@ li{
 }
 
 .corner-btns button{
-    color: white;
-    background-color: black;
     width: 50px;
     height: 50px;
     border: 3px solid white;
-    cursor: pointer;
 }
 
 .corner-btns button:hover{

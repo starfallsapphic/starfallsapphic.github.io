@@ -1,18 +1,7 @@
-const eebtn = document.getElementById("ee-btn");
-const eebg = document.getElementById("ee-bg");
+
 const motionBtn = document.getElementById("motion-btn");
 let motionEnabled = true;
 let hasMouseLeft = true;
-
-eebtn.addEventListener("click", (e) => {
-    eebg.classList.add("ee-ani");
-    eebg.style.zIndex = 100;
-    sfx = new Audio('assets/ee.mp3');
-    sfx.volume = 0.5;
-    sfx.play();
-    setTimeout(() => eebtn.remove(), 1000);
-    setTimeout(() => eebg.style.zIndex = null, 4000);
-});
 
 motionBtn.addEventListener("click", (e) => {
     if(motionEnabled){

@@ -32,6 +32,7 @@
 #ee-btn:hover {
     cursor: pointer;
     border: 2px outset #222222;
+    transition: none;
 }
 
 #ee-btn:active {
