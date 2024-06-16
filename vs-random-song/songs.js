@@ -66,7 +66,7 @@ const songs = [
       "title": "Credits",
       "OPN": 2,
       "MID": 9,
-      "FIN": 13,
+      "FIN": 13.4,
       "ENC": 13.6
     },
     {
@@ -101,7 +101,7 @@ const songs = [
       "title": "Chronomia",
       "OPN": 2,
       "MID": 6,
-      "FIN": 10.5,
+      "FIN": 10.6,
       "ENC": 13
     },
     {
@@ -150,7 +150,7 @@ const songs = [
       "title": "F1055",
       "OPN": 3,
       "MID": 9,
-      "FIN": 13.9,
+      "FIN": 13.8,
       "ENC": 14.1
     },
     {
@@ -367,7 +367,7 @@ const songs = [
       "title": "Prime",
       "OPN": 5,
       "MID": 9,
-      "FIN": 13,
+      "FIN": 13.6,
       "ENC": ""
     },
     {
@@ -416,7 +416,7 @@ const songs = [
       "title": "safe_state (MANIAQ Sound Team Remix)",
       "OPN": 4,
       "MID": 9,
-      "FIN": 13,
+      "FIN": 13.3,
       "ENC": ""
     },
     {
@@ -430,7 +430,7 @@ const songs = [
       "title": "Candy@-Cracker",
       "OPN": 5,
       "MID": 11.5,
-      "FIN": 13.5,
+      "FIN": 13.7,
       "ENC": ""
     },
     {
@@ -507,7 +507,7 @@ const songs = [
       "title": "Singularity",
       "OPN": 4,
       "MID": 10.5,
-      "FIN": 13,
+      "FIN": 13.5,
       "ENC": ""
     },
     {
@@ -528,7 +528,7 @@ const songs = [
       "title": "Ops:Limone",
       "OPN": 3,
       "MID": 8,
-      "FIN": 13,
+      "FIN": 13.2,
       "ENC": ""
     },
     {
@@ -549,7 +549,7 @@ const songs = [
       "title": "∀NARCHIC LIGHT",
       "OPN": 5,
       "MID": 11,
-      "FIN": 13.5,
+      "FIN": 13.8,
       "ENC": 14.6
     },
     {
