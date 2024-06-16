@@ -34,6 +34,13 @@ h2 {
     margin: 0;
 }
 
+.vs-gradient {
+    background: linear-gradient(to right, #FF0A6F, #00FFFE);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #difficulty-levels {
     display: flex;
     justify-content: space-around;
