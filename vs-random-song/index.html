@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>starry sylvie's stellar space</title>
+        <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/starfall.css" />
+        <link rel="stylesheet" href="vs-random-song.css">
+	</head>
+	<body>
+        <div class="corner-btns">
+            <button class="btn-enabled" id="motion-btn"><i class="fa-solid fa-star fa-xl"></i></button>
+        </div>
+
+        <div class="container">
+            <div class="text-box">
+                <div id="text-box-content">
+                    <h1 class="trans-gradient">vivid/stasis random song picker</h1>
+
+                    <h2>settings:</h2>
+
+                    <div id="difficulty-levels">
+                        <label for="opn-toggle" class="opn-bg">
+                            <span>OPENING</span>
+                            <input type="checkbox" name="opn-toggle" id="opn-toggle" checked>
+                        </label>
+                        <label for="mid-toggle" class="mid-bg">
+                            <span>MIDDLE</span>
+                            <input type="checkbox" name="mid-toggle" id="mid-toggle" checked>
+                        </label>
+                        <label for="fin-toggle" class="fin-bg">
+                            <span>FINALE</span>
+                            <input type="checkbox" name="fin-toggle" id="fin-toggle" checked>
+                        </label>
+                        <label for="enc-toggle" class="enc-bg">
+                            <span>ENCORE</span>
+                            <input type="checkbox" name="enc-toggle" id="enc-toggle" checked>
+                        </label>
+                    </div>
+
+                    <div id="cc-range">
+                        <span>difficulty range:</span> 
+                        <input type="number" name="min-cc" id="min-cc" step="0.1" value="1" min="0" max="16">
+                        <span>to</span>
+                        <input type="number" name="max-cc" id="max-cc" step="0.1" value="16" min="0" max="16">
+                    </div>
+
+                    <button id="spin-btn">spin it!</button>
+                    <span id="spin-error"></span>
+
+                    <div id="insta-spin">
+                        <label for="insta-spin-toggle">
+                            <span>instant spin</span>
+                            <input type="checkbox" name="insta-spin-toggle" id="insta-spin-toggle">
+                        </label>
+                    </div>
+
+                    <div id="song-display" class="unk-bg">
+                        <span id="chosen-title">??????????</span>
+                        <span> - </span>
+                        <span id="chosen-diff">??? ??</span>
+                    </div>
+
+                    <div class="notes">
+                        <span>songs are up-to-date with v3.2.2.3</span>
+                        <span>difficulties might not be fully accurate</span>
+                        <span>developed by starfallsapphic on discord</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="stars-bg"></div>
+
+        <script src="songs.js"></script>
+        <script src="random-song.js"></script>
+        <script src="../js/change-page.js"></script>
+        <script src="../js/stars.js"></script>
+    </body>
+</html>

@@ -1,0 +1,153 @@
+@font-face {
+    font-family: Monaco;
+    src: url(../assets/Monaco.woff2);
+}
+
+body, input {
+    font-family: Monaco;
+    font-size: 40px;
+}
+
+.text-box {
+    border-radius: 0px;
+}
+
+#text-box-content {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
+h1, h2, label {
+    font-size: 50px;
+    font-weight: 400 !important;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+}
+h2 {
+    font-size: 60px;
+    margin: 0;
+}
+
+#difficulty-levels {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 0;
+    gap: 1rem;
+}
+
+#difficulty-levels label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid white;
+    color: black;
+    padding: 10px 20px;
+    gap: 0;
+    
+}
+
+#difficulty-levels label,input {
+    cursor: pointer;
+}
+
+.opn-bg{ background: linear-gradient(to bottom, #00FF21 35%, #00D318 35%, #00D318 40%, #00FF21 40%, #00FF21 45%, #00D318 45%, #00D318 55%, #00FF21 55%, #00FF21 60%, #00D318 60%) }
+.mid-bg{ background: linear-gradient(to bottom, #00C4FF 35%, #007BD3 35%, #007BD3 40%, #00C4FF 40%, #00C4FF 45%, #007BD3 45%, #007BD3 55%, #00C4FF 55%, #00C4FF 60%, #007BD3 60%) }
+.fin-bg{ background: linear-gradient(to bottom, #FF0001 35%, #D10000 35%, #D10000 40%, #FF0001 40%, #FF0001 45%, #D10000 45%, #D10000 55%, #FF0001 55%, #FF0001 60%, #D10000 60%) }
+.enc-bg{ background: linear-gradient(to bottom, #B200FF 35%, #9000D3 35%, #9000D3 40%, #B200FF 40%, #B200FF 45%, #9000D3 45%, #9000D3 55%, #B200FF 55%, #B200FF 60%, #9000D3 60%) }
+.unk-bg{ background: linear-gradient(to bottom, #C7C7C7 35%, #919191 35%, #919191 40%, #C7C7C7 40%, #C7C7C7 45%, #919191 45%, #919191 55%, #C7C7C7 55%, #C7C7C7 60%, #919191 60%) }
+
+
+#difficulty-levels input {
+    width: 32px;
+    height: 32px;
+}
+
+#cc-range {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+#cc-range input {
+    background-color: black;
+    color: white;
+    border: 4px solid white;
+    font-size: 50px;
+    width: 6rem;
+    margin: 0px 10px;
+    padding: 0 20px;
+    cursor:text;
+}
+
+/* #spin */
+
+
+#spin-btn {
+    font-family: Monaco;
+    margin: 10px 0;
+    font-size: 50px;
+    opacity: 100%;
+    background: linear-gradient(120deg, #FF0A6F 49%, #00FFFE 51%);
+    color: black;
+}
+
+#spin-error{
+    color: red;
+}
+
+#song-display {
+    margin: 10px 0;
+    padding: 0px 20px;
+    font-size: 60px;
+    width: 80%;
+    text-align: center;
+    vertical-align: center;
+    color: black;
+    border: 4px solid white;
+}
+
+#insta-spin label{
+    font-size: 40px;
+    border: 4px solid white;
+    padding: 10px;
+}
+
+#insta-spin input{
+    width: 20px;
+    height: 20px;
+}
+
+.flash{
+    animation-name: flash;
+    animation-direction: normal;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+
+@keyframes flash {
+    0% { color:white; }
+    100% { color: black; }
+}
+
+.notes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media screen and (width < 600px) {
+
+    #difficulty-levels {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 25px 0;
+        gap: 1rem;
+    }
+}

@@ -11,6 +11,9 @@ body {
     align-items: center;
     min-height: 100dvh;
     font-family: Comfortaa;
+    
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .container {

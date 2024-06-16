@@ -1,0 +1,107 @@
+const spinBtn = document.getElementById("spin-btn");
+const diffInputs = document.querySelectorAll("#difficulty-levels input");
+const minCCInput = document.getElementById("min-cc");
+const maxCCInput = document.getElementById("max-cc");
+const instaSpin = document.getElementById("insta-spin-toggle");
+const songDisplay = document.getElementById("song-display");
+const difficulties = ["OPN", "MID", "FIN", "ENC"];
+
+spinBtn.addEventListener("click", chooseSong);
+
+function chooseSong(){
+    eligibleCharts = [];
+    eligibleDiffs = getEligibleDifficulties();
+    minCC = minCCInput.value;
+    maxCC = maxCCInput.value;
+
+    for(let song of songs){
+        addEligibleCharts(song);
+    }
+
+    filterByDiff();
+
+    if(eligibleCharts.length === 0){
+        document.getElementById("spin-error").innerHTML = "no charts matched these settings!";
+        return;
+    }else{
+        document.getElementById("spin-error").innerHTML = "";
+    }
+
+    shuffle(eligibleCharts);
+    if(instaSpin.checked){
+        setSongDisplay(eligibleCharts[0])
+    }else{
+        spinBtn.removeEventListener("click", chooseSong);
+        let count = 0;
+        shuffleInterval = setInterval(() => {
+            setSongDisplay(eligibleCharts[count % eligibleCharts.length]);
+            count += 1;
+        }, 50);
+
+        setTimeout(finaliseSongChoice, 2000);
+    }
+}
+
+
+function getEligibleDifficulties(){
+    let eligibleDiffs = []
+    for(let i=0; i<diffInputs.length; i++){
+        if(diffInputs[i].checked){
+            eligibleDiffs.push(difficulties[i]);
+        }
+    }
+    return eligibleDiffs;
+}
+
+
+function addEligibleCharts(s){
+    for(let key in s){
+        if(eligibleDiffs.includes(key) && s[key] !== ""){
+            eligibleCharts.push({
+                title: s.title,
+                diff: key,
+                cc: s[key],
+            });
+        }
+    }
+}
+
+
+function shuffle(array) {
+    let currentIndex = array.length;
+
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+
+        // Pick a remaining element...
+        let randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+        array[randomIndex], array[currentIndex]];
+    }
+}
+
+
+function setSongDisplay(s){
+    let diffDisplay = s.cc % 1 <= 0.5 ? Math.floor(s.cc) : Math.floor(s.cc) + "+"; 
+
+    songDisplay.classList.remove("unk-bg", "opn-bg", "mid-bg", "fin-bg", "enc-bg");
+    songDisplay.classList.add(s.diff.toLowerCase()+"-bg");
+    songDisplay.children[0].innerHTML = s.title;
+    songDisplay.children[2].innerHTML = s.diff + " " + diffDisplay;
+}
+
+function finaliseSongChoice(){
+    shuffle(eligibleCharts);
+    clearInterval(shuffleInterval);
+    setSongDisplay(eligibleCharts[0]);
+    songDisplay.classList.add("flash");
+    songDisplay.addEventListener("animationend", () => songDisplay.classList.remove("flash"));
+    spinBtn.addEventListener("click", chooseSong);
+}
+
+function filterByDiff(){
+    eligibleCharts = eligibleCharts.filter(s => s.cc >= minCC && s.cc <= maxCC);
+}
