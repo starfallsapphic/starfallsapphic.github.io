@@ -108,7 +108,7 @@ h2 {
 
 #repeats div {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -188,4 +188,5 @@ h2 {
     #song-display {font-size: 40px; line-height:2.5rem;}
 
     .cc-inputs{ flex-direction: column; }
+    #repeats div { flex-direction: column; }
 }
