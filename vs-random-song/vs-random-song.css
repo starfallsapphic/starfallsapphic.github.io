@@ -185,6 +185,7 @@ h2 {
     h1{font-size: 60px;}
     h2{font-size: 50px;}
     p,li{font-size: 32px; line-height: 2.5rem; margin: 5px 0;}
+    #song-display {font-size: 40px; line-height:2.5rem;}
 
     .cc-inputs{ flex-direction: column; }
 }
