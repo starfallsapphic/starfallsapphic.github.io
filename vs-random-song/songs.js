@@ -115,7 +115,7 @@ const songs = [
       "title": "GOODRAGE",
       "OPN": 4,
       "MID": 11.5,
-      "FIN": 13,
+      "FIN": 13.5,
       "ENC": ""
     },
     {
@@ -186,7 +186,7 @@ const songs = [
       "OPN": 7,
       "MID": 11.5,
       "FIN": 13,
-      "ENC": 13.5
+      "ENC": 13.4
     },
     {
       "title": "grode",
@@ -213,7 +213,7 @@ const songs = [
       "title": "Signals Afar",
       "OPN": 1,
       "MID": 8,
-      "FIN": 12.5,
+      "FIN": 12.9,
       "ENC": ""
     },
     {
@@ -291,7 +291,7 @@ const songs = [
       "OPN": 5,
       "MID": 7,
       "FIN": 13,
-      "ENC": 13.6
+      "ENC": 13.7
     },
     {
       "title": "Macropolis",
@@ -325,7 +325,7 @@ const songs = [
       "title": "Yamai",
       "OPN": 7,
       "MID": 11,
-      "FIN": 12.5,
+      "FIN": 12.7,
       "ENC": ""
     },
     {

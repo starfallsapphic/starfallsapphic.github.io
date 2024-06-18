@@ -8,12 +8,16 @@ const repeatChart = document.getElementById("repeat-chart");
 const repeatSong = document.getElementById("repeat-song");
 
 const instaSpin = document.getElementById("insta-spin-toggle");
+const showCC = document.getElementById("show-cc-toggle");
+
 const songDisplay = document.getElementById("song-display");
 const difficulties = ["OPN", "MID", "FIN", "ENC"];
 let chartsOnCooldown = [];
 let songsOnCooldown = [];
 
 spinBtn.addEventListener("click", chooseSong);
+
+showCC.addEventListener("click", ccToggle);
 
 function chooseSong(){
     eligibleCharts = [];
@@ -53,6 +57,19 @@ function chooseSong(){
     }
 
     advanceCooldowns();
+}
+
+function ccToggle() {
+    const alert = document.getElementById("cc-alert")
+    if(showCC.checked){
+        alert.innerHTML = "Many listed chart constants may not be accurate!";
+    }else{
+        alert.innerHTML = "";
+    }
+
+    if(typeof displayedSong !== "undefined"){
+        setSongDisplay(displayedSong);
+    }
 }
 
 
@@ -98,7 +115,13 @@ function shuffle(array) {
 
 
 function setSongDisplay(s){
-    let diffDisplay = s.cc % 1 <= 0.5 ? Math.floor(s.cc) : Math.floor(s.cc) + "+"; 
+    displayedSong = s;
+
+    if(showCC.checked){
+        diffDisplay = s.cc;
+    }else{
+        diffDisplay = s.cc % 1 <= 0.5 ? Math.floor(s.cc) : Math.floor(s.cc) + "+"; 
+    }
 
     songDisplay.classList.remove("unk-bg", "opn-bg", "mid-bg", "fin-bg", "enc-bg");
     songDisplay.classList.add(s.diff.toLowerCase()+"-bg");
