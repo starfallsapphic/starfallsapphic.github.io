@@ -118,7 +118,7 @@ function setSongDisplay(s){
     displayedSong = s;
 
     if(showCC.checked){
-        diffDisplay = s.cc;
+        diffDisplay = s.cc.toFixed(1);
     }else{
         diffDisplay = s.cc % 1 <= 0.5 ? Math.floor(s.cc) : Math.floor(s.cc) + "+"; 
     }
