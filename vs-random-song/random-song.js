@@ -15,6 +15,9 @@ const difficulties = ["OPN", "MID", "FIN", "ENC"];
 let chartsOnCooldown = [];
 let songsOnCooldown = [];
 
+const spinBtnColours = ["pink-bg", "blue-bg"]
+spinBtn.classList.add((spinBtnColours)[Math.floor(Math.random()*2)]);
+
 spinBtn.addEventListener("click", chooseSong);
 
 showCC.addEventListener("click", ccToggle);
@@ -112,6 +115,8 @@ function shuffle(array) {
         array[randomIndex], array[currentIndex]];
     }
 }
+
+
 
 
 function setSongDisplay(s){

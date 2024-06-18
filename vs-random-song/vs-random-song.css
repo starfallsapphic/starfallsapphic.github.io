@@ -122,9 +122,17 @@ h2 {
     margin: 20px 0;
     font-size: 50px;
     opacity: 100%;
-    background: linear-gradient(120deg, #FF0A6F 49%, #00FFFE 51%);
+    /* background: linear-gradient(120deg, #FF0A6F 49%, #00FFFE 51%); */
     color: black;
     line-height: 4rem;
+}
+
+.pink-bg {
+    background: linear-gradient(to bottom, #ff559c 35%, #FF0A6F 35%, #FF0A6F 40%, #ff559c 40%, #ff559c 45%, #FF0A6F 45%, #FF0A6F 55%, #ff559c 55%, #ff559c 60%, #FF0A6F 60%) !important;
+}
+
+.blue-bg {
+    background: linear-gradient(to bottom, #00FFFE 35%, #00bcbc 35%, #00bcbc 40%, #00FFFE 40%, #00FFFE 45%, #00bcbc 45%, #00bcbc 55%, #00FFFE 55%, #00FFFE 60%, #00bcbc 60%) !important;
 }
 
 #spin-error{
