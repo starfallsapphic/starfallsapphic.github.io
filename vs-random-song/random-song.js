@@ -19,8 +19,9 @@ const spinBtnColours = ["pink-bg", "blue-bg"]
 spinBtn.classList.add((spinBtnColours)[Math.floor(Math.random()*2)]);
 
 spinBtn.addEventListener("click", chooseSong);
-
 showCC.addEventListener("click", ccToggle);
+minCCInput.addEventListener("keypress", convertPlus);
+maxCCInput.addEventListener("keypress", convertPlus);
 
 function chooseSong(){
     eligibleCharts = [];
@@ -177,4 +178,11 @@ function purgeCooldowns(){
 function advanceCooldowns(){
     songsOnCooldown.forEach(s => s.sinceLast += 1);
     chartsOnCooldown.forEach(c => c.sinceLast += 1);
+}
+
+function convertPlus(e){
+    if(e.key === "+"){
+        e.preventDefault();
+        e.target.value += ".9";
+    }
 }
