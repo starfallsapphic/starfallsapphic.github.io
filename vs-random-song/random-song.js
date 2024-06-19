@@ -66,7 +66,7 @@ function chooseSong(){
 function ccToggle() {
     const alert = document.getElementById("cc-alert")
     if(showCC.checked){
-        alert.innerHTML = "Many listed chart constants may not be accurate!";
+        alert.innerHTML = "many listed chart constants may not be accurate!";
     }else{
         alert.innerHTML = "";
     }
@@ -126,7 +126,7 @@ function setSongDisplay(s){
     if(showCC.checked){
         diffDisplay = s.cc.toFixed(1);
     }else{
-        diffDisplay = s.cc % 1 <= 0.5 ? Math.floor(s.cc) : Math.floor(s.cc) + "+"; 
+        diffDisplay = s.cc % 1 <= 0.4 ? Math.floor(s.cc) : Math.floor(s.cc) + "+"; 
     }
 
     songDisplay.classList.remove("unk-bg", "opn-bg", "mid-bg", "fin-bg", "enc-bg");
