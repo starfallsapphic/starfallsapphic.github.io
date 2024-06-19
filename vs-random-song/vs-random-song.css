@@ -135,8 +135,8 @@ h2 {
     background: linear-gradient(to bottom, #00FFFE 35%, #00bcbc 35%, #00bcbc 40%, #00FFFE 40%, #00FFFE 45%, #00bcbc 45%, #00bcbc 55%, #00FFFE 55%, #00FFFE 60%, #00bcbc 60%) !important;
 }
 
-#spin-error{
-    color: red;
+.text-red{
+    color: red !important;
 }
 
 #song-display {

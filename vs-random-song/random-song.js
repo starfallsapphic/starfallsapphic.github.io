@@ -1,4 +1,5 @@
 const spinBtn = document.getElementById("spin-btn");
+
 const diffInputs = document.querySelectorAll("#difficulty-levels input");
 
 const minCCInput = document.getElementById("min-cc");
@@ -11,6 +12,9 @@ const instaSpin = document.getElementById("insta-spin-toggle");
 const showCC = document.getElementById("show-cc-toggle");
 
 const songDisplay = document.getElementById("song-display");
+
+const allNumInputs = document.querySelectorAll("input[type=number]");
+
 const difficulties = ["OPN", "MID", "FIN", "ENC"];
 let chartsOnCooldown = [];
 let songsOnCooldown = [];
@@ -23,7 +27,19 @@ showCC.addEventListener("click", ccToggle);
 minCCInput.addEventListener("keypress", convertPlus);
 maxCCInput.addEventListener("keypress", convertPlus);
 
+allNumInputs.forEach(input => 
+    input.addEventListener("input", () => {
+        if(input.value === ""){ 
+            input.classList.add("text-red");
+        }else{
+            input.classList.remove("text-red");
+        }
+    })
+)
+
 function chooseSong(){
+    // let allInputsValid = validateNumInputs();
+
     eligibleCharts = [];
     eligibleDiffs = getEligibleDifficulties();
     minCC = minCCInput.value;
@@ -186,3 +202,15 @@ function convertPlus(e){
         e.target.value += ".9";
     }
 }
+
+// function validateNumInputs(){
+//     allInputsValid = true;
+//     for(let input of allNumInputs){
+//         if(input.value === ""){
+//             allInputsValid = false;
+//             input.classList.add("text-red");
+//             input.addEventListener("keystroke", )
+//         }
+//     }
+//     return allInputsValid;
+// }
