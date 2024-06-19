@@ -30,29 +30,29 @@ const songs = [
     {
       "title": "Crosshatch",
       "OPN": 5,
-      "MID": 11,
-      "FIN": 12,
+      "MID": 10.6,
+      "FIN": 12.2,
       "ENC": ""
     },
     {
       "title": "ENERGY SYNERGY MATRIX",
       "OPN": 5,
       "MID": 10,
-      "FIN": 11,
+      "FIN": 11.7,
       "ENC": 14
     },
     {
       "title": "G e n g a o z o",
       "OPN": 6,
       "MID": 10,
-      "FIN": 13,
+      "FIN": 13.2,
       "ENC": ""
     },
     {
       "title": "Spell Diver",
       "OPN": 5,
-      "MID": 7,
-      "FIN": 12,
+      "MID": 8,
+      "FIN": 12.6,
       "ENC": ""
     },
     {
@@ -227,7 +227,7 @@ const songs = [
       "title": "septima",
       "OPN": 4,
       "MID": 9,
-      "FIN": 12.5,
+      "FIN": 12.7,
       "ENC": ""
     },
     {
@@ -254,7 +254,7 @@ const songs = [
     {
       "title": "energy trixxx",
       "OPN": 7,
-      "MID": 10.5,
+      "MID": 10.6,
       "FIN": 12,
       "ENC": 13
     },
@@ -289,7 +289,7 @@ const songs = [
     {
       "title": "obair-ghreis",
       "OPN": 5,
-      "MID": 7,
+      "MID": 8,
       "FIN": 13,
       "ENC": 13.7
     },
@@ -310,7 +310,7 @@ const songs = [
     {
       "title": "Happy Go Lucky!!!",
       "OPN": 5,
-      "MID": 9.5,
+      "MID": 9.6,
       "FIN": 14.5,
       "ENC": 15
     },
@@ -338,7 +338,7 @@ const songs = [
     {
       "title": "Revelation",
       "OPN": 6,
-      "MID": 11.5,
+      "MID": 12.3,
       "FIN": 14.2,
       "ENC": ""
     },
@@ -359,14 +359,14 @@ const songs = [
     {
       "title": "The Next Arcady",
       "OPN": 6,
-      "MID": 10.5,
-      "FIN": 12.5,
+      "MID": 10.9,
+      "FIN": 12.7,
       "ENC": ""
     },
     {
       "title": "Prime",
       "OPN": 5,
-      "MID": 9,
+      "MID": 10,
       "FIN": 13.6,
       "ENC": ""
     },
@@ -429,7 +429,7 @@ const songs = [
     {
       "title": "Candy@-Cracker",
       "OPN": 5,
-      "MID": 11.5,
+      "MID": 11.6,
       "FIN": 13.7,
       "ENC": ""
     },
@@ -492,7 +492,7 @@ const songs = [
     {
       "title": "Cyclical Rebellion",
       "OPN": 7,
-      "MID": 10.5,
+      "MID": 10.6,
       "FIN": 14.3,
       "ENC": ""
     },
@@ -513,7 +513,7 @@ const songs = [
     {
       "title": "execution_program",
       "OPN": 6,
-      "MID": 11.9,
+      "MID": 11.6,
       "FIN": 15.5,
       "ENC": ""
     },
@@ -555,7 +555,7 @@ const songs = [
     {
       "title": "Simulated Reality",
       "OPN": 6,
-      "MID": 12,
+      "MID": 12.4,
       "FIN": 14,
       "ENC": ""
     },
