@@ -49,7 +49,6 @@ function chooseSong(){
     maxCC = +maxCCInput.value;
 
     glowThreshold = minCC + 0.8*(maxCC - minCC);
-    console.log(glowThreshold)
 
     purgeCooldowns();
 
