@@ -10,6 +10,7 @@ const repeatSong = document.getElementById("repeat-song");
 
 const instaSpin = document.getElementById("insta-spin-toggle");
 const showCC = document.getElementById("show-cc-toggle");
+const spoilerToggle = document.getElementById("spoiler-toggle")
 
 const songDisplay = document.getElementById("song-display");
 
@@ -38,12 +39,17 @@ allNumInputs.forEach(input =>
 )
 
 function chooseSong(){
-    // let allInputsValid = validateNumInputs();
+    // removes the effects from last spin
+    songDisplay.classList.remove("flash");
+    difficulties.forEach(d => songDisplay.classList.remove(d.toLowerCase() + "-glow"));
 
     eligibleCharts = [];
     eligibleDiffs = getEligibleDifficulties();
-    minCC = minCCInput.value;
-    maxCC = maxCCInput.value;
+    minCC = +minCCInput.value;
+    maxCC = +maxCCInput.value;
+
+    glowThreshold = minCC + 0.8*(maxCC - minCC);
+    console.log(glowThreshold)
 
     purgeCooldowns();
 
@@ -53,6 +59,10 @@ function chooseSong(){
 
     filterByDiff();
     filterByCooldown();
+    
+    if(!spoilerToggle.checked){
+        filterBySpoiler();
+    }
 
     if(eligibleCharts.length === 0){
         document.getElementById("spin-error").innerHTML = "no charts matched these settings!";
@@ -144,20 +154,27 @@ function setSongDisplay(s){
     }else{
         diffDisplay = s.cc % 1 <= 0.5 ? Math.floor(s.cc) : Math.floor(s.cc) + "+"; 
     }
-
     songDisplay.classList.remove("unk-bg", "opn-bg", "mid-bg", "fin-bg", "enc-bg");
     songDisplay.classList.add(s.diff.toLowerCase()+"-bg");
     songDisplay.children[0].innerHTML = s.title;
     songDisplay.children[2].innerHTML = s.diff + " " + diffDisplay;
+
+    
 }
 
 function finaliseSongChoice(){
     shuffle(eligibleCharts);
     clearInterval(shuffleInterval);
-    setSongDisplay(eligibleCharts[0]);
-    setOnCooldown(eligibleCharts[0]);
-    songDisplay.classList.add("flash");
-    songDisplay.addEventListener("animationend", () => songDisplay.classList.remove("flash"));
+
+    let s = eligibleCharts[0]
+
+    setSongDisplay(s);
+    setOnCooldown(s);
+    if(s.cc >= glowThreshold){
+        songDisplay.classList.add(s.diff.toLowerCase() + "-glow");
+    }else{
+        songDisplay.classList.add("flash");
+    }
     spinBtn.addEventListener("click", chooseSong);
 }
 
@@ -186,9 +203,15 @@ function filterByCooldown(){
     }
 }
 
+function filterBySpoiler(){
+    for(let songName of spoilerSongNames){
+        eligibleCharts = eligibleCharts.filter(c => !(c.title === songName));
+    }
+}
+
 function purgeCooldowns(){
-    songsOnCooldown = songsOnCooldown.filter(s => s.sinceLast <= repeatSong.value);
-    chartsOnCooldown = chartsOnCooldown.filter(c => c.sinceLast <= repeatChart.value);
+    songsOnCooldown = songsOnCooldown.filter(s => s.sinceLast < repeatSong.value);
+    chartsOnCooldown = chartsOnCooldown.filter(c => c.sinceLast < repeatChart.value);
 }
 
 function advanceCooldowns(){
@@ -203,14 +226,3 @@ function convertPlus(e){
     }
 }
 
-// function validateNumInputs(){
-//     allInputsValid = true;
-//     for(let input of allNumInputs){
-//         if(input.value === ""){
-//             allInputsValid = false;
-//             input.classList.add("text-red");
-//             input.addEventListener("keystroke", )
-//         }
-//     }
-//     return allInputsValid;
-// }

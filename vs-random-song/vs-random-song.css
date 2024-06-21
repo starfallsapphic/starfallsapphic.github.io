@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: Monaco;
     src: url(../assets/monaco.woff2);
@@ -155,8 +157,10 @@ h2 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
-    margin: 10px 0;
+    margin: 10px 0px;
 }
 
 .display-opts label {
@@ -174,6 +178,24 @@ h2 {
     color: #EEEE00;
     text-align: center;
     line-height: 2rem;
+}
+
+.opn-glow, .mid-glow, .fin-glow, .enc-glow {
+    animation-name: glow, flash;
+    animation-duration: 2s;
+    animation-direction: normal;
+    box-shadow: 0 0 20px 6px var(--glow-colour)
+}
+
+.opn-glow { --glow-colour: #00FF21; }
+.mid-glow { --glow-colour: #00C4FF; }
+.fin-glow { --glow-colour: #FF0001; }
+.enc-glow { --glow-colour: #B200FF; }
+
+@keyframes glow {
+    0% { box-shadow: 0 0 0 0 var(--glow-colour)};
+    10% { box-shadow: 0 0 50px 10px var(--glow-colour)}
+    100%{ box-shadow: 0 0 20px 6px var(--glow-colour)}
 }
 
 .flash{
