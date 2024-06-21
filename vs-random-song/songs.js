@@ -128,42 +128,42 @@ const songs = [
 	{
 		"title": "Acolyte",
 		"OPN": 1,
-		"MID": 7,
-		"FIN": 11.6,
+		"MID": 8,
+		"FIN": 11.7,
 		"ENC": ""
 	},
 	{
 		"title": "Doppelganger",
 		"OPN": 8,
 		"MID": 12.4,
-		"FIN": 14.5,
+		"FIN": 14.3,
 		"ENC": ""
 	},
 	{
 		"title": "Lost City",
 		"OPN": 1,
 		"MID": 6,
-		"FIN": 10.5,
+		"FIN": 10.6,
 		"ENC": ""
 	},
 	{
 		"title": "F1055",
 		"OPN": 3,
-		"MID": 9,
+		"MID": 9.6,
 		"FIN": 13.5,
 		"ENC": 13.9
 	},
 	{
 		"title": "INFiNiTE ENERZY -Overdoze-",
 		"OPN": 2,
-		"MID": 5,
-		"FIN": 12.5,
+		"MID": 6,
+		"FIN": 13,
 		"ENC": ""
 	},
 	{
 		"title": "Nhelv",
 		"OPN": 5,
-		"MID": 11,
+		"MID": 11.2,
 		"FIN": 13.8,
 		"ENC": ""
 	},
@@ -200,20 +200,20 @@ const songs = [
 		"OPN": 8,
 		"MID": 11.4,
 		"FIN": 14,
-		"ENC": 15.3
+		"ENC": 15.2
 	},
 	{
 		"title": "QUASAR",
 		"OPN": 6,
-		"MID": 11.6,
+		"MID": 11.7,
 		"FIN": 14.6,
 		"ENC": ""
 	},
 	{
 		"title": "Signals Afar",
-		"OPN": 1,
+		"OPN": 2,
 		"MID": 8,
-		"FIN": 12.9,
+		"FIN": 12.7,
 		"ENC": ""
 	},
 	{
@@ -227,13 +227,13 @@ const songs = [
 		"title": "septima",
 		"OPN": 4,
 		"MID": 9,
-		"FIN": 12.2,
+		"FIN": 12.4,
 		"ENC": ""
 	},
 	{
 		"title": "Fixations Toward the Stars",
 		"OPN": 4,
-		"MID": 10.5,
+		"MID": 10.6,
 		"FIN": 14.1,
 		"ENC": ""
 	},
@@ -241,7 +241,7 @@ const songs = [
 		"title": "Tavgha",
 		"OPN": 3,
 		"MID": 7,
-		"FIN": 10.5,
+		"FIN": 10.6,
 		"ENC": ""
 	},
 	{
@@ -282,7 +282,7 @@ const songs = [
 	{
 		"title": "Courage",
 		"OPN": 3,
-		"MID": 8,
+		"MID": 9,
 		"FIN": 11.5,
 		"ENC": ""
 	},
@@ -291,13 +291,13 @@ const songs = [
 		"OPN": 5,
 		"MID": 8,
 		"FIN": 12.8,
-		"ENC": 13.4
+		"ENC": 13.5
 	},
 	{
 		"title": "Macropolis",
 		"OPN": 3,
-		"MID": 7,
-		"FIN": 11,
+		"MID": 6,
+		"FIN": 10.6,
 		"ENC": ""
 	},
 	{
@@ -311,7 +311,7 @@ const songs = [
 		"title": "Happy Go Lucky!!!",
 		"OPN": 5,
 		"MID": 9.6,
-		"FIN": 14.5,
+		"FIN": 14.3,
 		"ENC": 14.8
 	},
 	{
@@ -333,7 +333,7 @@ const songs = [
 		"OPN": 7,
 		"MID": 10.6,
 		"FIN": 13.5,
-		"ENC": 14.9
+		"ENC": 14.7
 	},
 	{
 		"title": "Revelation",
@@ -346,14 +346,14 @@ const songs = [
 		"title": "POISON GARDEN",
 		"OPN": 4,
 		"MID": 10,
-		"FIN": 12.5,
+		"FIN": 12.2,
 		"ENC": ""
 	},
 	{
 		"title": "APO11O",
 		"OPN": 4,
 		"MID": 9,
-		"FIN": 12.5,
+		"FIN": 12.6,
 		"ENC": ""
 	},
 	{
@@ -380,7 +380,7 @@ const songs = [
 	{
 		"title": "valor/starcross",
 		"OPN": 8,
-		"MID": 12,
+		"MID": 12.1,
 		"FIN": 14.5,
 		"ENC": 15.5
 	},
@@ -423,7 +423,7 @@ const songs = [
 		"title": "The Last Page",
 		"OPN": 3,
 		"MID": 8,
-		"FIN": 12.5,
+		"FIN": 12.3,
 		"ENC": ""
 	},
 	{
@@ -437,14 +437,14 @@ const songs = [
 		"title": "Orphen",
 		"OPN": 6,
 		"MID": 11.9,
-		"FIN": 14.9,
+		"FIN": 14.7,
 		"ENC": ""
 	},
 	{
 		"title": "3.1V.C1",
 		"OPN": 7,
-		"MID": 12.4,
-		"FIN": 15.2,
+		"MID": 12.5,
+		"FIN": 15,
 		"ENC": ""
 	},
 	{
@@ -457,7 +457,7 @@ const songs = [
 	{
 		"title": "BPM",
 		"OPN": 4,
-		"MID": 9.5,
+		"MID": 9.6,
 		"FIN": 13,
 		"ENC": ""
 	},
@@ -472,13 +472,13 @@ const songs = [
 		"title": "Dear My Endsummer",
 		"OPN": 7,
 		"MID": 11.5,
-		"FIN": 13,
+		"FIN": 13.3,
 		"ENC": ""
 	},
 	{
 		"title": "STARGAZERS",
 		"OPN": 7,
-		"MID": 12.5,
+		"MID": 12.6,
 		"FIN": 15.8,
 		"ENC": ""
 	},
@@ -486,14 +486,14 @@ const songs = [
 		"title": "Angel's Window",
 		"OPN": 2,
 		"MID": 6,
-		"FIN": 12.5,
+		"FIN": 12.6,
 		"ENC": ""
 	},
 	{
 		"title": "Cyclical Rebellion",
 		"OPN": 7,
 		"MID": 10.6,
-		"FIN": 14.3,
+		"FIN": 14.1,
 		"ENC": ""
 	},
 	{
@@ -514,7 +514,7 @@ const songs = [
 		"title": "execution_program",
 		"OPN": 6,
 		"MID": 11.3,
-		"FIN": 15.5,
+		"FIN": 15.6,
 		"ENC": ""
 	},
 	{
@@ -534,15 +534,15 @@ const songs = [
 	{
 		"title": "Tormented World",
 		"OPN": 2,
-		"MID": 10.5,
-		"FIN": 13.9,
+		"MID": 10.6,
+		"FIN": 13.6,
 		"ENC": ""
 	},
 	{
 		"title": "Octava",
 		"OPN": 3,
 		"MID": 9,
-		"FIN": 12.5,
+		"FIN": 12.6,
 		"ENC": ""
 	},
 	{
@@ -555,7 +555,7 @@ const songs = [
 	{
 		"title": "Simulated Reality",
 		"OPN": 6,
-		"MID": 12.4,
+		"MID": 12.2,
 		"FIN": 13.8,
 		"ENC": ""
 	},
@@ -569,22 +569,22 @@ const songs = [
 	{
 		"title": "SUPERNOVA",
 		"OPN": 8,
-		"MID": 12.5,
+		"MID": 12.6,
 		"FIN": 14.9,
 		"ENC": 15.7
 	},
 	{
 		"title": "UTF-8000000000",
 		"OPN": 4,
-		"MID": 11,
-		"FIN": 13,
+		"MID": 11.2,
+		"FIN": 13.1,
 		"ENC": ""
 	},
 	{
 		"title": "Aleph-0",
 		"OPN": 5,
-		"MID": 9,
-		"FIN": 13.3,
+		"MID": 9.6,
+		"FIN": 13.4,
 		"ENC": ""
 	},
 	{
@@ -604,8 +604,8 @@ const songs = [
 	{
 		"title": "grode(decoherence)",
 		"OPN": 5,
-		"MID": 11,
-		"FIN": 14.2,
+		"MID": 11.1,
+		"FIN": 14.0,
 		"ENC": 14.8
 	},
 	{
@@ -625,15 +625,15 @@ const songs = [
 	{
 		"title": "Last Wish (vivid/stasis ver.)",
 		"OPN": 8,
-		"MID": 12.8,
+		"MID": 12.9,
 		"FIN": 14.6,
 		"ENC": 15.6
 	},
 	{
 		"title": "CLAUDIA -estella-",
 		"OPN": 6,
-		"MID": 11.8,
-		"FIN": 14.7,
+		"MID": 11.7,
+		"FIN": 14.5,
 		"ENC": ""
 	},
 	{
@@ -654,7 +654,7 @@ const songs = [
 		"title": "The Night of Fright",
 		"OPN": 6,
 		"MID": 10.6,
-		"FIN": 14,
+		"FIN": 14.1,
 		"ENC": ""
 	},
 	{
@@ -668,22 +668,22 @@ const songs = [
 		"title": "Sternstunde",
 		"OPN": 5,
 		"MID": 9.6,
-		"FIN": 13.7,
+		"FIN": 13.8,
 		"ENC": ""
 	},
 	{
 		"title": "CLAUDIA -libertia-",
-		"OPN": 1,
-		"MID": 1,
+		"OPN": 8,
+		"MID": 12.7,
 		"FIN": 15,
 		"ENC": 15.9
 	},
 	{
 		"title": "stop-motion",
-		"OPN": 1,
-		"MID": 1,
-		"FIN": 1,
-		"ENC": 15.6
+		"OPN": 7,
+		"MID": 12,
+		"FIN": 14.9,
+		"ENC": 15.7
 	},
 	
 ]
