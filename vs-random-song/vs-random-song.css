@@ -184,6 +184,7 @@ h2 {
     animation-name: glow, flash;
     animation-duration: 2s;
     animation-direction: normal;
+    animation-timing-function: ease;
     box-shadow: 0 0 20px 6px var(--glow-colour)
 }
 
