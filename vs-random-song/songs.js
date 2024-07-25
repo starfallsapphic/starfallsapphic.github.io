@@ -192,7 +192,7 @@ const songs = [
 		"title": "grode",
 		"OPN": 1,
 		"MID": 6,
-		"FIN": 8,
+		"FIN": 9,
 		"ENC": 11
 	},
 	{
