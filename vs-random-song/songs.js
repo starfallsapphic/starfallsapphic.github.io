@@ -685,6 +685,34 @@ const songs = [
 		"FIN": 14.9,
 		"ENC": 15.7
 	},
+	{
+		"title": "Trip Coffee",
+		"OPN": 4,
+		"MID": 9.6,
+		"FIN": 13.7,
+		"ENC": ""
+	},
+	{
+		"title": "Rafflesia",
+		"OPN": 8,
+		"MID": 12.7,
+		"FIN": 15.4,
+		"ENC": ""
+	},
+	{
+		"title": "NULCTRL",
+		"OPN": 3,
+		"MID": 9,
+		"FIN": 10.6,
+		"ENC": 11.6
+	},
+	{
+		"title": "ULTIMATE",
+		"OPN": 6,
+		"MID": 10,
+		"FIN": 12.1,
+		"ENC": 13.9
+	},
 	
 ]
 
