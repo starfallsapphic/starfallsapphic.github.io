@@ -16,9 +16,9 @@ const songs = [
 	{
 		"title": "+ERABY+E CONNEC+10N",
 		"OPN": 8,
-		"MID": 11.7,
-		"FIN": 14.7,
-		"ENC": 15.2
+		"MID": 11.6,
+		"FIN": 15.1,
+		"ENC": 15.7
 	},
 	{
 		"title": "FULi AUTO SHOOTER",
@@ -31,7 +31,7 @@ const songs = [
 		"title": "Crosshatch",
 		"OPN": 5,
 		"MID": 10.6,
-		"FIN": 12.2,
+		"FIN": 12.1,
 		"ENC": ""
 	},
 	{
@@ -39,13 +39,13 @@ const songs = [
 		"OPN": 5,
 		"MID": 10,
 		"FIN": 11.3,
-		"ENC": 14
+		"ENC": 14.5
 	},
 	{
 		"title": "G e n g a o z o",
 		"OPN": 6,
 		"MID": 10,
-		"FIN": 13.2,
+		"FIN": 13.1,
 		"ENC": ""
 	},
 	{
@@ -60,20 +60,20 @@ const songs = [
 		"OPN": 4,
 		"MID": 8,
 		"FIN": 12.8,
-		"ENC": 15.4
+		"ENC": 15.9
 	},
 	{
 		"title": "Credits",
 		"OPN": 2,
 		"MID": 9,
-		"FIN": 13.3,
-		"ENC": 13.4
+		"FIN": 13.4,
+		"ENC": 13.6
 	},
 	{
 		"title": "Pictured as Perfect",
 		"OPN": 4,
 		"MID": 9,
-		"FIN": 13.4,
+		"FIN": 13.6,
 		"ENC": ""
 	},
 	{
@@ -94,7 +94,7 @@ const songs = [
 		"title": "HTTPS",
 		"OPN": 3,
 		"MID": 11.3,
-		"FIN": 13.3,
+		"FIN": 13.5,
 		"ENC": ""
 	},
 	{
@@ -108,14 +108,14 @@ const songs = [
 		"title": "What You Love",
 		"OPN": 6,
 		"MID": 7,
-		"FIN": 12,
+		"FIN": 12.3,
 		"ENC": ""
 	},
 	{
 		"title": "GOODRAGE",
 		"OPN": 4,
 		"MID": 11.5,
-		"FIN": 13.5,
+		"FIN": 13.4,
 		"ENC": ""
 	},
 	{
@@ -123,7 +123,7 @@ const songs = [
 		"OPN": 1,
 		"MID": 6,
 		"FIN": 11.4,
-		"ENC": 12
+		"ENC": 12.2
 	},
 	{
 		"title": "Acolyte",
@@ -136,7 +136,7 @@ const songs = [
 		"title": "Doppelganger",
 		"OPN": 8,
 		"MID": 12.4,
-		"FIN": 14.3,
+		"FIN": 14.7,
 		"ENC": ""
 	},
 	{
@@ -150,8 +150,8 @@ const songs = [
 		"title": "F1055",
 		"OPN": 3,
 		"MID": 9.6,
-		"FIN": 13.5,
-		"ENC": 13.9
+		"FIN": 13.7,
+		"ENC": 14.3
 	},
 	{
 		"title": "INFiNiTE ENERZY -Overdoze-",
@@ -164,7 +164,7 @@ const songs = [
 		"title": "Nhelv",
 		"OPN": 5,
 		"MID": 11.2,
-		"FIN": 13.8,
+		"FIN": 14.2,
 		"ENC": ""
 	},
 	{
@@ -178,15 +178,15 @@ const songs = [
 		"title": "Luminaria",
 		"OPN": 1,
 		"MID": 6,
-		"FIN": 12,
-		"ENC": 13
+		"FIN": 12.2,
+		"ENC": 13.3
 	},
 	{
 		"title": "BADSECRET",
 		"OPN": 7,
 		"MID": 11.5,
-		"FIN": 13,
-		"ENC": 13.2
+		"FIN": 13.3,
+		"ENC": 13.3
 	},
 	{
 		"title": "grode",
@@ -199,14 +199,14 @@ const songs = [
 		"title": "PYROMANIA",
 		"OPN": 8,
 		"MID": 11.4,
-		"FIN": 14,
-		"ENC": 15.2
+		"FIN": 14.4,
+		"ENC": 15.8
 	},
 	{
 		"title": "QUASAR",
 		"OPN": 6,
 		"MID": 11.7,
-		"FIN": 14.6,
+		"FIN": 15,
 		"ENC": ""
 	},
 	{
@@ -234,7 +234,7 @@ const songs = [
 		"title": "Fixations Toward the Stars",
 		"OPN": 4,
 		"MID": 10.6,
-		"FIN": 14.1,
+		"FIN": 14.6,
 		"ENC": ""
 	},
 	{
@@ -248,7 +248,7 @@ const songs = [
 		"title": "LET THE CREATION BEGIN",
 		"OPN": 3,
 		"MID": 11.5,
-		"FIN": 15.3,
+		"FIN": 15.9,
 		"ENC": ""
 	},
 	{
@@ -262,21 +262,21 @@ const songs = [
 		"title": "Random",
 		"OPN": 5,
 		"MID": 8,
-		"FIN": 12.3,
+		"FIN": 12.5,
 		"ENC": ""
 	},
 	{
 		"title": -1,
 		"OPN": 6,
 		"MID": 11.5,
-		"FIN": 13.9,
+		"FIN": 14.3,
 		"ENC": ""
 	},
 	{
 		"title": "Farewell to Syzygia",
 		"OPN": 7,
-		"MID": 12,
-		"FIN": 14.7,
+		"MID": 12.2,
+		"FIN": 14.8,
 		"ENC": ""
 	},
 	{
@@ -291,7 +291,7 @@ const songs = [
 		"OPN": 5,
 		"MID": 8,
 		"FIN": 12.8,
-		"ENC": 13.5
+		"ENC": 13.7
 	},
 	{
 		"title": "Macropolis",
@@ -304,15 +304,15 @@ const songs = [
 		"title": "3, 2, 1, Let's Go",
 		"OPN": 5,
 		"MID": 10.5,
-		"FIN": 14.4,
+		"FIN": 14.6,
 		"ENC": ""
 	},
 	{
 		"title": "Happy Go Lucky!!!",
 		"OPN": 5,
 		"MID": 9.6,
-		"FIN": 14.3,
-		"ENC": 14.8
+		"FIN": 14.7,
+		"ENC": 15.3
 	},
 	{
 		"title": "Asymmetry (takehirotei remix)",
@@ -332,14 +332,14 @@ const songs = [
 		"title": "Chronoexplorers",
 		"OPN": 7,
 		"MID": 10.6,
-		"FIN": 13.5,
-		"ENC": 14.7
+		"FIN": 13.8,
+		"ENC": 15.2
 	},
 	{
 		"title": "Revelation",
 		"OPN": 6,
 		"MID": 12.3,
-		"FIN": 14.0,
+		"FIN": 14.4,
 		"ENC": ""
 	},
 	{
@@ -360,29 +360,29 @@ const songs = [
 		"title": "The Next Arcady",
 		"OPN": 6,
 		"MID": 10.9,
-		"FIN": 12.3,
+		"FIN": 12.4,
 		"ENC": ""
 	},
 	{
 		"title": "Prime",
 		"OPN": 5,
 		"MID": 10,
-		"FIN": 13.4,
+		"FIN": 13.7,
 		"ENC": ""
 	},
 	{
 		"title": "Unraveling Stasis",
 		"OPN": 8,
 		"MID": 12.5,
-		"FIN": 14.9,
-		"ENC": 15.9
+		"FIN": 15.5,
+		"ENC": 16.8
 	},
 	{
 		"title": "valor/starcross",
 		"OPN": 8,
 		"MID": 12.1,
-		"FIN": 14.5,
-		"ENC": 15.5
+		"FIN": 14.9,
+		"ENC": 16
 	},
 	{
 		"title": "Cosmogyral",
@@ -395,7 +395,7 @@ const songs = [
 		"title": "It Go (Cheryl Stelli remix)",
 		"OPN": 5,
 		"MID": 10.5,
-		"FIN": 12.3,
+		"FIN": 12.4,
 		"ENC": ""
 	},
 	{
@@ -409,14 +409,14 @@ const songs = [
 		"title": "grode (Wyvren's Remix)",
 		"OPN": 5,
 		"MID": 8,
-		"FIN": 13.7,
+		"FIN": 13.9,
 		"ENC": ""
 	},
 	{
 		"title": "safe_state (MANIAQ Sound Team Remix)",
 		"OPN": 4,
 		"MID": 9,
-		"FIN": 13.1,
+		"FIN": 13.2,
 		"ENC": ""
 	},
 	{
@@ -430,21 +430,21 @@ const songs = [
 		"title": "Candy@-Cracker",
 		"OPN": 5,
 		"MID": 11.4,
-		"FIN": 13.5,
+		"FIN": 13.8,
 		"ENC": ""
 	},
 	{
 		"title": "Orphen",
 		"OPN": 6,
 		"MID": 11.9,
-		"FIN": 14.7,
+		"FIN": 15.2,
 		"ENC": ""
 	},
 	{
 		"title": "3.1V.C1",
 		"OPN": 7,
 		"MID": 12.5,
-		"FIN": 15,
+		"FIN": 15.6,
 		"ENC": ""
 	},
 	{
@@ -452,34 +452,34 @@ const songs = [
 		"OPN": 1,
 		"MID": 7,
 		"FIN": 12,
-		"ENC": 15.6
+		"ENC": 16.3
 	},
 	{
 		"title": "BPM",
 		"OPN": 4,
 		"MID": 9.6,
-		"FIN": 13,
+		"FIN": 13.1,
 		"ENC": ""
 	},
 	{
 		"title": "WATAGASHI RUSH",
 		"OPN": 4,
 		"MID": 8,
-		"FIN": 12,
-		"ENC": 13.8
+		"FIN": 12.1,
+		"ENC": 14
 	},
 	{
 		"title": "Dear My Endsummer",
 		"OPN": 7,
 		"MID": 11.5,
-		"FIN": 13.3,
+		"FIN": 13.5,
 		"ENC": ""
 	},
 	{
 		"title": "STARGAZERS",
 		"OPN": 7,
 		"MID": 12.6,
-		"FIN": 15.8,
+		"FIN": 16.8,
 		"ENC": ""
 	},
 	{
@@ -493,7 +493,7 @@ const songs = [
 		"title": "Cyclical Rebellion",
 		"OPN": 7,
 		"MID": 10.6,
-		"FIN": 14.1,
+		"FIN": 14.5,
 		"ENC": ""
 	},
 	{
@@ -507,35 +507,35 @@ const songs = [
 		"title": "Singularity",
 		"OPN": 4,
 		"MID": 10.5,
-		"FIN": 13.3,
+		"FIN": 13.4,
 		"ENC": ""
 	},
 	{
 		"title": "execution_program",
 		"OPN": 6,
 		"MID": 11.3,
-		"FIN": 15.6,
+		"FIN": 16.4,
 		"ENC": ""
 	},
 	{
 		"title": "Seraphiel",
 		"OPN": 5,
 		"MID": 10,
-		"FIN": 14.2,
+		"FIN": 14.5,
 		"ENC": ""
 	},
 	{
 		"title": "Ops:Limone",
 		"OPN": 3,
 		"MID": 8,
-		"FIN": 13.1,
+		"FIN": 13.2,
 		"ENC": ""
 	},
 	{
 		"title": "Tormented World",
 		"OPN": 2,
 		"MID": 10.6,
-		"FIN": 13.6,
+		"FIN": 13.9,
 		"ENC": ""
 	},
 	{
@@ -549,14 +549,14 @@ const songs = [
 		"title": "∀NARCHIC LIGHT",
 		"OPN": 5,
 		"MID": 11,
-		"FIN": 13.5,
-		"ENC": 14.4
+		"FIN": 13.7,
+		"ENC": 14.8
 	},
 	{
 		"title": "Simulated Reality",
 		"OPN": 6,
 		"MID": 12.2,
-		"FIN": 13.8,
+		"FIN": 14.1,
 		"ENC": ""
 	},
 	{
@@ -570,28 +570,28 @@ const songs = [
 		"title": "SUPERNOVA",
 		"OPN": 8,
 		"MID": 12.6,
-		"FIN": 14.9,
-		"ENC": 15.7
+		"FIN": 15.4,
+		"ENC": 16.6
 	},
 	{
 		"title": "UTF-8000000000",
 		"OPN": 4,
 		"MID": 11.2,
-		"FIN": 13.1,
+		"FIN": 13.2,
 		"ENC": ""
 	},
 	{
 		"title": "Aleph-0",
 		"OPN": 5,
 		"MID": 9.6,
-		"FIN": 13.4,
+		"FIN": 13.7,
 		"ENC": ""
 	},
 	{
 		"title": "CITY RIDE IN THE JUNGLE",
 		"OPN": 7,
 		"MID": 10.6,
-		"FIN": 12.7,
+		"FIN": 12.9,
 		"ENC": ""
 	},
 	{
@@ -605,14 +605,14 @@ const songs = [
 		"title": "grode(decoherence)",
 		"OPN": 5,
 		"MID": 11.1,
-		"FIN": 14.0,
-		"ENC": 14.8
+		"FIN": 14.4,
+		"ENC": 15.2
 	},
 	{
 		"title": "Battle in Enemy Territory",
 		"OPN": 5,
 		"MID": 10.5,
-		"FIN": 13,
+		"FIN": 13.2,
 		"ENC": ""
 	},
 	{
@@ -625,15 +625,15 @@ const songs = [
 	{
 		"title": "Last Wish (vivid/stasis ver.)",
 		"OPN": 8,
-		"MID": 12.9,
-		"FIN": 14.6,
-		"ENC": 15.6
+		"MID": 13,
+		"FIN": 15,
+		"ENC": 16.2
 	},
 	{
 		"title": "CLAUDIA -estella-",
 		"OPN": 6,
 		"MID": 11.7,
-		"FIN": 14.5,
+		"FIN": 14.9,
 		"ENC": ""
 	},
 	{
@@ -647,56 +647,56 @@ const songs = [
 		"title": "exterminate()",
 		"OPN": 6,
 		"MID": 10,
-		"FIN": 14.6,
+		"FIN": 15,
 		"ENC": ""
 	},
 	{
 		"title": "The Night of Fright",
 		"OPN": 6,
 		"MID": 10.6,
-		"FIN": 14.1,
+		"FIN": 14.5,
 		"ENC": ""
 	},
 	{
 		"title": "nullbreak",
 		"OPN": 4,
 		"MID": 9,
-		"FIN": 13.8,
+		"FIN": 14.1,
 		"ENC": ""
 	},
 	{
 		"title": "Sternstunde",
 		"OPN": 5,
 		"MID": 9.6,
-		"FIN": 13.8,
+		"FIN": 14.1,
 		"ENC": ""
 	},
 	{
 		"title": "CLAUDIA -libertia-",
 		"OPN": 8,
 		"MID": 12.7,
-		"FIN": 15,
-		"ENC": 15.9
+		"FIN": 15.6,
+		"ENC": 16.7
 	},
 	{
 		"title": "stop-motion",
 		"OPN": 7,
 		"MID": 12,
-		"FIN": 14.9,
-		"ENC": 15.7
+		"FIN": 15.4,
+		"ENC": 16.5
 	},
 	{
 		"title": "Trip Coffee",
 		"OPN": 4,
 		"MID": 9.6,
-		"FIN": 13.7,
+		"FIN": 13.9,
 		"ENC": ""
 	},
 	{
 		"title": "Rafflesia",
 		"OPN": 8,
-		"MID": 12.7,
-		"FIN": 15.4,
+		"MID": 12.8,
+		"FIN": 15.8,
 		"ENC": ""
 	},
 	{
@@ -704,16 +704,30 @@ const songs = [
 		"OPN": 3,
 		"MID": 9,
 		"FIN": 10.6,
-		"ENC": 11.6
+		"ENC": 11.8
 	},
 	{
 		"title": "ULTIMATE",
 		"OPN": 6,
 		"MID": 10,
 		"FIN": 12.1,
-		"ENC": 13.9
+		"ENC": 14
 	},
-	
+	{
+		"title": "Synthesizer Party",
+		"OPN": 3,
+		"MID": 9,
+		"FIN": 12.1,
+		"ENC": ""
+	},
+	{
+		"title": "hotline_ophiucus",
+		"OPN": 6,
+		"MID": 10.6,
+		"FIN": 12.8,
+		"ENC": ""
+	},
+
 ]
 
 const spoilerSongNames = [
