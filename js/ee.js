@@ -4,6 +4,7 @@ const eebg = document.getElementById("ee-bg");
 eebtn.addEventListener("click", (e) => {
     eebg.classList.add("ee-ani");
     eebg.style.zIndex = 100;
+    eebg.style.display = "block";
     sfx = new Audio('./assets/ee.mp3');
     sfx.volume = 0.5;
     sfx.play();
@@ -13,5 +14,8 @@ eebtn.addEventListener("click", (e) => {
         eebtn.remove();
     })
     // setTimeout(() => eebtn.remove(), 1000);
-    setTimeout(() => eebg.style.zIndex = null, 4000);
+    setTimeout(() => {
+        eebg.style.zIndex = null;
+        eebg.style.display = null;
+    }, 4000);
 });

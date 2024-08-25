@@ -42,6 +42,7 @@
 
 #ee-bg {
     opacity: 0;
+    display: none;
     position: fixed;
     top: 10dvh;
     max-height: 80dvh;
