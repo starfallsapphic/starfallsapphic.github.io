@@ -59,9 +59,9 @@ function chooseSong(){
     filterByDiff();
     filterByCooldown();
     
-    if(!spoilerToggle.checked){
-        filterBySpoiler();
-    }
+    // if(!spoilerToggle.checked){
+    //     filterBySpoiler();
+    // }
 
     if(eligibleCharts.length === 0){
         document.getElementById("spin-error").innerHTML = "no charts matched these settings!";
@@ -141,8 +141,6 @@ function shuffle(array) {
         array[randomIndex], array[currentIndex]];
     }
 }
-
-
 
 
 function setSongDisplay(s){

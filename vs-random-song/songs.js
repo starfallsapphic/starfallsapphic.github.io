@@ -731,11 +731,5 @@ const songs = [
 ]
 
 const spoilerSongNames = [
-	"Shattered Sky After Rain",
-	"exterminate()",
-	"The Night of Fright",
-	"nullbreak",
-	"Sternstunde",
-	"CLAUDIA -libertia-",
-	"stop-motion",
+	// 
 ]
